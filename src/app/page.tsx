@@ -128,6 +128,10 @@ const MainComponent = () => (
             goverment document in this database.)
           </ListItem>
           <ListItem>
+            Ability to share your government documents with other users. (As
+            well as a revenue split for making that data accessible.)
+          </ListItem>
+          <ListItem>
             Corellate submissions by a single author across multiple
             dockets/juristictions.
           </ListItem>
@@ -191,6 +195,8 @@ const MainComponent = () => (
                 <ListItem>
                   Priority support for adding your custom datasets
                 </ListItem>
+                <ListItem>On-Premises Deployment</ListItem>
+                <ListItem>Access to our raw goverment datasets.</ListItem>
                 <ListItem>Everything in Professional</ListItem>
               </List>
             </TableCell>
