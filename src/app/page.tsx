@@ -6,7 +6,6 @@ import TextArt from "@/components/AsciiText";
 
 import AsciiArtHTML from "@/components/AsciiArtHTML";
 import path from "path";
-import ascii_logo_medium from "ascii_logo_medium.txt";
 
 // Paragraph Component
 
