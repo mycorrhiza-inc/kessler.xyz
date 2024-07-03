@@ -32,7 +32,7 @@ const TextArt: React.FC<TextArtProps> = ({ label, text, url }) => {
     <a
       href={url}
       aria-label={label}
-      className="text-blue-600 hover:text-pink-500"
+      className="text-blue-400 hover:text-pink-500"
     >
       {content}
     </a>
