@@ -81,6 +81,7 @@ const MainComponent = () => (
         <Paragraph>
           <br />
           <br />
+          <br />
           Kessler is a search application that aims to take in every single
           document produced by the US government, from the National
           Transportation Safety Administration Report on the Baltimore Bridge
