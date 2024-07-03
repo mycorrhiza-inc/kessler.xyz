@@ -5,8 +5,11 @@ import { ReactNode } from "react";
 import TextArt from "@/components/AsciiText";
 
 import AsciiArtHTML from "@/components/AsciiArtHTML";
+import path from "path";
+import ascii_logo_medium from "ascii_logo_medium.txt";
 
 // Paragraph Component
+
 interface ParagraphProps {
   children: ReactNode;
 }
@@ -61,7 +64,9 @@ const MainComponent = () => (
   <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm ">
       <>
-        <AsciiArtHTML htmlPath="/ascii_logo_medium.txt" />
+        <AsciiArtHTML
+          htmlPath={path.join(process.cwd(), "public", "ascii_logo_medium.txt")}
+        />
         <TextArt label="Kessler" text="kess_logo" />
         <Paragraph>
           Kessler is a search application that aims to take in every single
@@ -104,11 +109,11 @@ const MainComponent = () => (
         <Paragraph>We have multiple pricing options available:</Paragraph>
         <Table>
           <TableRow>
-            <TableCell header>Tier</TableCell>
-            <TableCell header>Features</TableCell>
+            <TableCell header>Community Tier</TableCell>
+            <TableCell header>Professional Tier ($20 per month)</TableCell>
+            <TableCell header>Enterprise Tier (Contact Us)</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Community Tier</TableCell>
             <TableCell>
               <List>
                 <ListItem>Access to all search functionality</ListItem>
@@ -122,9 +127,6 @@ const MainComponent = () => (
                 </ListItem>
               </List>
             </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>Professional Tier ($20 per month)</TableCell>
             <TableCell>
               <List>
                 <ListItem>Access to all our government documents</ListItem>
@@ -135,9 +137,6 @@ const MainComponent = () => (
                 <ListItem>Everything in Community</ListItem>
               </List>
             </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>Enterprise Tier (Contact Us)</TableCell>
             <TableCell>
               <List>
                 <ListItem>
@@ -146,6 +145,11 @@ const MainComponent = () => (
                 <ListItem>Everything in Professional</ListItem>
               </List>
             </TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Try Now</TableCell>
+            <TableCell>Purchase</TableCell>
+            <TableCell>Contact Us</TableCell>
           </TableRow>
         </Table>
         <Paragraph>
