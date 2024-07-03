@@ -229,6 +229,7 @@ const MainComponent = () => (
           by
         </Paragraph>
         <TextArt label="Mycorrhiza" text="mycorrhiza_logo" />
+        <Paragraph>© 2024</Paragraph>
       </>
     </div>
   </main>
