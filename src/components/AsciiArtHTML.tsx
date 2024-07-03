@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import parse from "html-react-parser";
-import fs from "fs";
 
 const AsciiArtHTML = ({ htmlPath }: { htmlPath: string }) => {
-  try {
-    const htmlContent = fs.readFileSync(htmlPath, "utf8");
-    const parsedHtml = parse(htmlContent);
+  const [htmlContent, setHtmlContent] = useState<string>("");
 
-    return <div>{parsedHtml}</div>;
-  } catch (error) {
-    console.error(`Error loading HTML file: ${error}`);
-    return <div>Error loading ASCII art</div>;
-  }
+  useEffect(() => {
+    const fetchHtmlContent = async () => {
+      try {
+        const response = await fetch(htmlPath);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const text = await response.text();
+        setHtmlContent(text);
+      } catch (error) {
+        console.error(`Error fetching HTML file: ${error}`);
+        setHtmlContent("Error loading ASCII art");
+      }
+    };
+
+    fetchHtmlContent();
+  }, [htmlPath]);
+
+  const parsedHtml = parse(htmlContent);
+
+  return <div>{parsedHtml}</div>;
 };
 
 export default AsciiArtHTML;
