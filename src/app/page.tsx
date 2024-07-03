@@ -61,7 +61,7 @@ const MainComponent = () => (
   <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm ">
       <>
-        <AsciiArtHTML htmlPath="/home/nicole/Documents/mycorrhizae/kessler.xyz/src/assets/ascii_logo_medium.txt" />
+        <AsciiArtHTML htmlPath="@/assets/ascii_logo_medium.txt" />
         <TextArt label="Kessler" text="kess_logo" />
         <Paragraph>
           Kessler is a search application that aims to take in every single
