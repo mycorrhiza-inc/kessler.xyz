@@ -71,17 +71,11 @@ const MainComponent = () => (
   <main className="flex min-h-screen flex-col items-center justify-center p-24">
     <div className="z-10 w-full max-w-5xl flex flex-col items-center justify-center font-mono text-sm">
       <>
+        <TextArt label="Kessler" text="kess_logo" />
         <AsciiArtHTML
           htmlPath={path.join(process.cwd(), "public", "ascii_logo_medium.txt")}
         />
-        <TextArt label="Kessler" text="kess_logo" />
-
-        <span></span>
-        <span></span>
         <Paragraph>
-          <br />
-          <br />
-          <br />
           Kessler is a search application that aims to take in every single
           document produced by the US government, from the National
           Transportation Safety Administration Report on the Baltimore Bridge
@@ -128,8 +122,9 @@ const MainComponent = () => (
             goverment document in this database.)
           </ListItem>
           <ListItem>
-            Ability to share your government documents with other users. (As
-            well as a revenue split for making that data accessible.)
+            Ability to share your government documents with other users.
+            <br />
+            (As well as a revenue split for making that data accessible.)
           </ListItem>
           <ListItem>
             Corellate submissions by a single author across multiple
@@ -140,8 +135,8 @@ const MainComponent = () => (
             submissions.
           </ListItem>
           <ListItem>
-            Sentiment Analysis so you can easily see at a glance what documents
-            are arguing for or against a certain proposal.
+            Sentiment Analysis so you can easily see what documents are arguing
+            for or against a certain proposal.
           </ListItem>
           <ListItem>More to Come!</ListItem>
         </List>
