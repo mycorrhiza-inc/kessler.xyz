@@ -13,7 +13,7 @@ interface ParagraphProps {
   children: ReactNode;
 }
 const Paragraph: React.FC<ParagraphProps> = ({ children }) => (
-  <p className="mb-4">{children}</p>
+  <p className="mb-4  text-lg">{children}</p>
 );
 
 // List Component
@@ -21,7 +21,7 @@ interface ListProps {
   children: ReactNode[];
 }
 const List: React.FC<ListProps> = ({ children }) => (
-  <ul className="list-disc list-inside mb-4">{children}</ul>
+  <ul className="list-disc list-inside mb-4  text-lg">{children}</ul>
 );
 
 // ListItem Component
@@ -68,7 +68,7 @@ const Link = ({ url, text }: { url: string; text: string }) => (
 //  <main className="flex min-h-screen flex-col items-center justify-between p-24">
 //    <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
 const MainComponent = () => (
-  <main className="flex min-h-screen flex-col items-center justify-center p-24">
+  <main className="flex min-h-screen flex-col items-center justify-center p-30">
     <div className="z-10 w-full max-w-5xl flex flex-col items-center justify-center font-mono text-sm">
       <>
         <TextArt label="Kessler" text="kess_logo" />
@@ -140,9 +140,17 @@ const MainComponent = () => (
           </ListItem>
           <ListItem>More to Come!</ListItem>
         </List>
-        <TextArt label="Try Now" text="try_now" url="https://app.kessler.xyz" />
+        <div className="items-center justify-center font-black">
+          <TextArt
+            label="Try Now"
+            text="try_now"
+            url="https://app.kessler.xyz"
+          />
+        </div>
         <br />
-        <TextArt label="Book Demo" text="book_demo" url="/contact" />
+        <div className="items-center justify-center font-black">
+          <TextArt label="Book Demo" text="book_demo" url="/contact" />
+        </div>
         <Paragraph>
           We really want to continue building out this software, and also keep
           it free and availible for organisations with less funding. (If you are
@@ -212,7 +220,6 @@ const MainComponent = () => (
         <Paragraph>
           You can also <Link text="Donate" url="/donate" /> to support further
           development
-          <br />
           <br />
           <br />
           <br />
