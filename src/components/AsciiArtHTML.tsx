@@ -7,7 +7,7 @@ const AsciiArtHTML = ({ htmlPath }: { htmlPath: string }) => {
     const htmlContent = fs.readFileSync(htmlPath, "utf8");
     const parsedHtml = parse(htmlContent);
 
-    return <div>{parsedHtml}</div>;
+    return <div className="text-xs">{parsedHtml}</div>;
   } catch (error) {
     console.error(`Error loading HTML file: ${error}`);
     return <div>Error loading ASCII art</div>;

@@ -31,9 +31,9 @@ const MainComponent = () => (
         />
         <Paragraph>
           Kessler is a search application that aims to take in every single
-          document produced by the US government, from the National
-          Transportation Safety Administration Report on the Baltimore Bridge
-          Collapse, to the public comments on Thornton, CO recent zoning
+          document produced by governments in the United States, from the
+          National Transportation Safety Administration Report on the Baltimore
+          Bridge Collapse, to the public comments on Thornton, CO recent zoning
           changes. <br />
           <br />
           Currently the product is still in early alpha, providing a list of
@@ -45,12 +45,12 @@ const MainComponent = () => (
           </ListItem>
           <ListItem>
             Identical search features to most government dockets out there
-            (Search by Title, Filter by Author, etc...)
+            (Search by title, Filter by author, etc...)
           </ListItem>
           <ListItem>
-            Ability to ingest PDFs/Audio Recordings/Word Docs/Ebooks
+            Ability to ingest PDFs/audio recordings/Word docs/ebooks
           </ListItem>
-          <ListItem>Full Text Search Across all ingested documents</ListItem>
+          <ListItem>Full text search across all ingested documents</ListItem>
           <ListItem>
             Use of a chatbot to interact with the docket using LLMs and RAG
           </ListItem>
@@ -59,14 +59,15 @@ const MainComponent = () => (
             existing features
           </ListItem>
           <ListItem>
-            All within a User Interface that doesn&apos;t look like it was
+            All within a user interface that doesn&apos;t look like it was
             designed in the 1990s
           </ListItem>
         </List>
         <Paragraph>
-          We are also in the process of implementing the features below.
+          We are also implementing the features below.
           <br />
-          (Contact us if there is anything you would want us to work on)
+          <Link url="/contact">Contact us</Link> if there is anything you would
+          want us to work on!
         </Paragraph>
 
         <List>
@@ -81,18 +82,18 @@ const MainComponent = () => (
             (As well as a revenue split for making that data accessible.)
           </ListItem>
           <ListItem>
-            Corellate submissions by a single author across multiple
-            dockets/juristictions.
+            Correlate submissions by a single author across multiple document
+            databases and juristictions.
           </ListItem>
           <ListItem>
             Smart notification system to inform you only of important new
             submissions.
           </ListItem>
           <ListItem>
-            Sentiment Analysis so you can easily see what documents are arguing
+            Sentiment analysis so you can easily see what documents are arguing
             for or against a certain proposal.
           </ListItem>
-          <ListItem>More to Come!</ListItem>
+          <ListItem>More to come!</ListItem>
         </List>
         <a href="https://app.kessler.xyz">
           <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
@@ -114,10 +115,7 @@ const MainComponent = () => (
 
         <Paragraph>
           We really want to continue building out this software, and also keep
-          it free and availible for organisations with less funding. (If you are
-          an NGO or Community Project that would struggle to afford this pleae
-          contact us for a free license.)
-          <br />
+          it free and availible for organisations with less funding. <br />
           <br />
           If you would find this service useful we have these pricing options
           available:
@@ -178,8 +176,9 @@ const MainComponent = () => (
         </Table>
 
         <Paragraph>
-          You can also <Link url="/donate">Donate</Link> to support further
-          development
+          (If you are an NGO or Community Project that would struggle to afford
+          this pleae contact us for a free license.) You can also{" "}
+          <Link url="/donate">Donate</Link> to support further development
           <br />
           <br />
           <br />
@@ -195,7 +194,7 @@ const MainComponent = () => (
           </span>{" "}
           by
         </Paragraph>
-        <TextArt label="Mycorrhiza" text="mycorrhiza_logo" url="/mycor" />
+        <TextArt label="Mycorrhiza" text="mycorrhiza_logo" url="/contact" />
         <Paragraph>© 2024</Paragraph>
       </>
     </div>

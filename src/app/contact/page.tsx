@@ -19,8 +19,8 @@ import {
 function ContactBox({
   name,
   email,
-  signal,
-  signal_link,
+  signal = "",
+  signal_link = "",
 }: {
   name: string;
   email: string;
@@ -38,9 +38,11 @@ function ContactBox({
         <ListItem>
           Email: <Link url={"mailto:" + email}>{email}</Link>
         </ListItem>
-        <ListItem>
-          Signal: <Link url={signal_link}>{signal}</Link>
-        </ListItem>
+        {signal != "" && (
+          <ListItem>
+            Signal: <Link url={signal_link}>{signal}</Link>
+          </ListItem>
+        )}
       </List>
     </>
   );
@@ -64,6 +66,12 @@ const MainComponent = () => (
           email="n@mycor.io"
           signal="fractalhuman.77"
           signal_link="https://signal.me/#eu/s1HzDF7CEoaON3btUMaMof_lsuvZDK797GFq6yca4-Gp1fuQ5kFIsKzVlinyb5l2"
+        ></ContactBox>
+        <ContactBox
+          name="Mirrir Bright"
+          email="m@mycor.io"
+          signal=""
+          signal_link=""
         ></ContactBox>
       </>
     </div>

@@ -1,8 +1,5 @@
 import TextArt from "@/components/AsciiText";
 
-import AsciiArtHTML from "@/components/AsciiArtHTML";
-import path from "path";
-
 // Paragraph Component
 
 import {
@@ -34,16 +31,12 @@ const MainComponent = () => (
           a standard 501c3/501c4 nonprofit, however we decided against it since
           we never want to get in a situation where we are beholden to large
           donors and need to spend 50% of our organisational bandwith on
-          fundraising or applying for grants. (It also means that we can use
-          venture captial money that would have otherwise gone to building a
-          juice packet squeezer or AI powered kamikaze drones could instead be
-          used to actually improve society.)
+          fundraising or applying for grants.
           <br />
           <br />
           However, we are still committed to operating Mycorrhiza in an ethical
           way that advances our ultimate mission, namely we commit to doing all
-          the following. (Change list to being a numbered list instead of a
-          bullet point list)
+          the following.
         </Paragraph>
         <List>
           <ListItem>
