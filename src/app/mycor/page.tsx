@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import TextArt from "@/components/AsciiText";
 
 import AsciiArtHTML from "@/components/AsciiArtHTML";
@@ -64,9 +63,9 @@ const MainComponent = () => (
             license to something restrictive and ambiguous.
           </ListItem>
           <ListItem>
-            Share our data with trusted NGO's (Such as Catalyst Coop) that would
-            be free to distribute it in the event any of these guidelines are
-            broken.
+            Share our data with trusted NGO&apos;s (Such as Catalyst Coop) that
+            would be free to distribute it in the event any of these guidelines
+            are broken.
           </ListItem>
         </List>
         <Paragraph>

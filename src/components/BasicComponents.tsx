@@ -1,6 +1,7 @@
 // BasicComponents.tsx
 import React from "react";
 
+import { ReactNode } from "react";
 interface ParagraphProps {
   children: ReactNode;
 }
