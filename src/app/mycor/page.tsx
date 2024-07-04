@@ -37,8 +37,8 @@ const MainComponent = () => (
           donors and need to spend 50% of our organisational bandwith on
           fundraising or applying for grants. (It also means that we can use
           venture captial money that would have otherwise gone to building a
-          juice packet squeezer or AI powered kamikaze drones can be used to
-          actually improve society.)
+          juice packet squeezer or AI powered kamikaze drones could instead be
+          used to actually improve society.)
           <br />
           <br />
           However, we are still committed to operating Mycorrhiza in an ethical
