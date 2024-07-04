@@ -7,70 +7,24 @@ import TextArt from "@/components/AsciiText";
 import AsciiArtHTML from "@/components/AsciiArtHTML";
 import path from "path";
 
-// Paragraph Component
-
-interface ParagraphProps {
-  children: ReactNode;
-}
-const Paragraph: React.FC<ParagraphProps> = ({ children }) => (
-  <p className="mb-4  text-lg">{children}</p>
-);
-
-// List Component
-interface ListProps {
-  children: ReactNode[];
-}
-const List: React.FC<ListProps> = ({ children }) => (
-  <ul className="list-disc list-inside mb-4  text-lg">{children}</ul>
-);
-
-// ListItem Component
-interface ListItemProps {
-  children: ReactNode;
-}
-const ListItem: React.FC<ListItemProps> = ({ children }) => (
-  <li className="mb-2">{children}</li>
-);
-
-// Table Component
-interface TableProps {
-  children: ReactNode[];
-}
-const Table: React.FC<TableProps> = ({ children }) => (
-  <table className="table-auto w-full mb-4">
-    <tbody>{children}</tbody>
-  </table>
-);
-
-// TableRow Component
-interface TableRowProps {
-  children: ReactNode[];
-}
-const TableRow: React.FC<TableRowProps> = ({ children }) => <tr>{children}</tr>;
-
-// TableCell Component
-interface TableCellProps {
-  children: ReactNode;
-  header?: boolean;
-}
-const TableCell: React.FC<TableCellProps> = ({ children, header }) => (
-  <td className={`border px-4 py-2 ${header ? "font-bold" : ""}`}>
-    {children}
-  </td>
-);
-
-const Link = ({ url, text }: { url: string; text: string }) => (
-  <a href={url} className="text-blue-400 hover:text-pink-500">
-    {text}
-  </a>
-);
-
+import {
+  Paragraph,
+  List,
+  ListItem,
+  Table,
+  TableRow,
+  TableCell,
+  Link,
+} from "@/components/BasicComponents";
 //  <main className="flex min-h-screen flex-col items-center justify-between p-24">
 //    <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
 const MainComponent = () => (
   <main className="flex min-h-screen flex-col items-center justify-center p-30">
     <div className="z-10 w-full max-w-5xl flex flex-col items-center justify-center font-mono text-sm">
       <>
+        <Paragraph>
+          <br />
+        </Paragraph>
         <TextArt label="Kessler" text="kess_logo" />
         <AsciiArtHTML
           htmlPath={path.join(process.cwd(), "public", "ascii_logo_medium.txt")}
@@ -140,6 +94,18 @@ const MainComponent = () => (
           </ListItem>
           <ListItem>More to Come!</ListItem>
         </List>
+
+        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Try Now
+          </span>
+        </button>
+        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Book Demo
+          </span>
+        </button>
+
         <div className="items-center justify-center font-black">
           <TextArt
             label="Try Now"
@@ -235,7 +201,7 @@ const MainComponent = () => (
           </span>{" "}
           by
         </Paragraph>
-        <TextArt label="Mycorrhiza" text="mycorrhiza_logo" />
+        <TextArt label="Mycorrhiza" text="mycorrhiza_logo" url="/mycor" />
         <Paragraph>© 2024</Paragraph>
       </>
     </div>
