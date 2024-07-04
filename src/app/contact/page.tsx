@@ -36,10 +36,10 @@ function ContactBox({
       </Paragraph>
       <List>
         <ListItem>
-          Email: <a href={"mailto:" + email}>{email}</a>
+          Email: <Link url={"mailto:" + email}>{email}</Link>
         </ListItem>
         <ListItem>
-          Signal: <a href={signal_link}>{signal}</a>
+          Signal: <Link url={signal_link}>{signal}</Link>
         </ListItem>
       </List>
     </>

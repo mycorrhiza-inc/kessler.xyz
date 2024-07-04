@@ -137,10 +137,9 @@ const MainComponent = () => (
                 </ListItem>
                 <ListItem>Use of open source LLMs</ListItem>
                 <ListItem>
-                  <Link
-                    text="Run your own instance with our open source code"
-                    url="https://git.mycor.io/mycorrhiza/kessler"
-                  />
+                  <Link url="https://git.mycor.io/mycorrhiza/kessler">
+                    Run your own instance with our open source code
+                  </Link>
                 </ListItem>
               </List>
             </TableCell>
@@ -167,19 +166,19 @@ const MainComponent = () => (
           </TableRow>
           <TableRow>
             <TableCell>
-              <Link text="Try Now" url="https://app.kessler.xyz" />
+              <Link url="https://app.kessler.xyz">Try Now</Link>
             </TableCell>
             <TableCell>
-              <Link text="Purchase" url="/payment" />
+              <Link url="/payment"> Purchase</Link>
             </TableCell>
             <TableCell>
-              <Link text="Contact Us" url="/contact" />
+              <Link url="/contact">Contact Us</Link>
             </TableCell>
           </TableRow>
         </Table>
 
         <Paragraph>
-          You can also <Link text="Donate" url="/donate" /> to support further
+          You can also <Link url="/donate">Donate</Link> to support further
           development
           <br />
           <br />

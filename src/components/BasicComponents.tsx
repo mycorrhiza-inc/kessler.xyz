@@ -50,10 +50,10 @@ export const TableCell: React.FC<TableCellProps> = ({ children, header }) => (
 
 interface LinkProps {
   url: string;
-  text: string;
+  children: ReactNode;
 }
-export const Link: React.FC<LinkProps> = ({ url, text }) => (
+export const Link: React.FC<LinkProps> = ({ url, children }) => (
   <a href={url} className="text-blue-400 hover:text-pink-500">
-    {text}
+    {children}
   </a>
 );
