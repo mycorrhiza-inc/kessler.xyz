@@ -48,7 +48,7 @@ const MainComponent = () => (
             interested customer, or donator.
           </ListItem>
           <ListItem>
-            Providing our software free of charge for leftist social change
+            Providing our software free of charge for social change
             organisations who could otherwise not afford it.
           </ListItem>
           <ListItem>
