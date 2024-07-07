@@ -27,7 +27,7 @@ const MainComponent = () => (
         </Paragraph>
         <TextArt label="Kessler" text="kess_logo" />
         <AsciiArtHTML
-          htmlPath={path.join(process.cwd(), "public", "ascii_logo_medium.txt")}
+          htmlPath={path.join(process.cwd(), "public", "ascii_logo_xl_v2.txt")}
         />
         <Paragraph>
           Kessler is a search application that aims to take in every single
