@@ -23,7 +23,7 @@ const TextArt: React.FC<TextArtProps> = ({ label, text, url }) => {
   }
 
   const content = (
-    <pre aria-label={label} className="text-art">
+    <pre aria-label={label} className="text-art leading-tight">
       {switchString(text)}
     </pre>
   );
