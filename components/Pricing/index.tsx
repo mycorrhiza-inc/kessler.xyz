@@ -13,8 +13,8 @@ const Pricing = () => {
             <SectionHeader
               headerInfo={{
                 title: `PRICING PLANS`,
-                subtitle: `Simple Pricing`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                subtitle: `Understandable DIY Pricing`,
+                description: `Pricing that fits your needs and helps fund future development.`,
               }}
             />
           </div>
@@ -46,13 +46,10 @@ const Pricing = () => {
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Access to all search functionality
+                    Access to search functionality
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
                     Access to a limited set of open access government documents
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Use of open source LLMs
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
                     <a
@@ -108,10 +105,12 @@ const Pricing = () => {
                     Ability to upload and process your own documents
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Smarter LLMs for chatbots
+                    Use of frontier level Large Language Models for rag
+                    functionality (Llama 405B, GPT-4o)
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Everything in Community
+                    Intended for Individuals or Non-Profits doing community
+                    work.
                   </li>
                 </ul>
               </div>
@@ -156,7 +155,7 @@ const Pricing = () => {
                     Access to our raw government datasets
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Everything in Professional
+                    Intended for Large Companies or National/International NGO's
                   </li>
                 </ul>
               </div>
