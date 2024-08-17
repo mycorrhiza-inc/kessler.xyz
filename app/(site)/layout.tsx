@@ -28,10 +28,10 @@ export default function RootLayout({
           <Header />
           <ToasterContext />
           {children}
-          <Footer />
           <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
   );
 }
+// TODO: Add  <Footer /> back in
