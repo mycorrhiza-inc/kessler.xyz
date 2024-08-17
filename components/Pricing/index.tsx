@@ -155,7 +155,8 @@ const Pricing = () => {
                     Access to our raw government datasets
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Intended for Large Companies or National/International NGO's
+                    Intended for Large Companies or National/International
+                    NGO&apos;s
                   </li>
                 </ul>
               </div>
