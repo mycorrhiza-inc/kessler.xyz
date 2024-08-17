@@ -5,34 +5,23 @@ import { Testimonial } from "@/types/testimonial";
 export const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "Brad Venner",
+    designation: "Statestician at USEPA",
     image: image1,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+    content: "I guess it works??",
   },
   {
     id: 2,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
+    name: "Bryan Murray",
+    designation: "Data Scientist at SwitchBox",
     image: image2,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+    content: "Looks Useful.",
   },
   {
     id: 3,
-    name: "Devid Smith",
-    designation: "Founter @democompany",
+    name: "Juan-Puablo Valez",
+    designation: "Founder at Switchbox",
     image: image1,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
-  },
-  {
-    id: 4,
-    name: "Jhon Abraham",
-    designation: "Founter @democompany",
-    image: image2,
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+    content: "Wow, you guys spent a lot of time on this.",
   },
 ];

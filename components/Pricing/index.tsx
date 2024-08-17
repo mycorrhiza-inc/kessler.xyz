@@ -30,43 +30,46 @@ const Pricing = () => {
               className="dark:hidden"
             />
           </div>
+
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $10{" "}
+                $0{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Small Pack
+                Community Tier
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
-
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    Access to all search functionality
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    Access to a limited set of open access government documents
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Use of open source LLMs
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <a
+                      href="https://git.mycor.io/mycorrhiza/kessler"
+                      className="text-primary underline"
+                    >
+                      Run your own instance with our open source code
+                    </a>
                   </li>
                 </ul>
               </div>
-
-              <button
-                aria-label="Get the Plan button"
+              <a
+                href="https://app.kessler.xyz"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Try Now
                 </span>
                 <svg
                   width="14"
@@ -79,7 +82,7 @@ const Pricing = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
 
             {/* <!-- Pricing Item --> */}
@@ -87,41 +90,37 @@ const Pricing = () => {
               <div className="absolute -right-3.5 top-7.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white">
                 popular
               </div>
-
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $59{" "}
+                $30{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Medium Pack
+                Professional Tier
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
-
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    Access to all our government documents
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    Ability to upload and process your own documents
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                    Smarter LLMs for chatbots
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    Everything in Community
                   </li>
                 </ul>
               </div>
-
-              <button
-                aria-label="Get the Plan button"
+              <a
+                href="/payment"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Purchase
                 </span>
                 <svg
                   width="14"
@@ -134,45 +133,39 @@ const Pricing = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
 
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $189{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
-                </span>
+                Contact Us
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Large Pack
+                Enterprise Tier
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
-
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    Priority support for adding your custom datasets
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    On-Premises Deployment
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                    Access to our raw government datasets
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                    Everything in Professional
                   </li>
                 </ul>
               </div>
-
-              <button
-                aria-label="Get the Plan button"
+              <a
+                href="/contact"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Contact Us
                 </span>
                 <svg
                   width="14"
@@ -185,7 +178,7 @@ const Pricing = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>
