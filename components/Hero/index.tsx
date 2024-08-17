@@ -29,7 +29,7 @@ const Hero = () => {
                 single document produced by governments in the United States,
                 from the National Transportation Safety Administration Report on
                 the Baltimore Bridge Collapse, to the public comments on
-                Thornton, CO's recent zoning changes.
+                Thornton, CO&apos;s recent zoning changes.
               </p>
 
               <div className="mt-10">
